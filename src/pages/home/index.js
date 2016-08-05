@@ -1,4 +1,6 @@
+var template = require('./template.marko');
 module.exports = function(req, res) {
-   res.write('Hvar er du?');
-   res.end();
+    template.render({
+        name: 'Frank'
+    }, res);
 }

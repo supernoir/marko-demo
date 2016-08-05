@@ -1,3 +1,5 @@
+require('marko/node-require').install();
+
 var express = require('express');
 var app = express();
 
